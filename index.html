@@ -13,6 +13,10 @@
             <i class="fa-solid fa-user text-xl bg-slate-400 w-8 rounded-lg cursor-pointer text-center "></i>
     </header>
 
+    <div class="flex justify-center"></div>
+        <h1 id="date" class="text-center text-3xl rounded-lg p-6 bg-blue-200 shadow-2xl"></h1>
+    </div>
+
     <div class="flex flex-col items-center md:flex-row md:gap-5 gap-2 justify-center md:mt-20 mt-2 flex-wrap">
         <!-- ! deposit -->
         <div class="bg-white px-8 py-5 md:w-[480px] w-full  flex items-center justify-between rounded-xl flex-wrap">
@@ -76,6 +80,15 @@
 const depositInput = document.getElementById('depositInput');
 const depositButton = document.getElementById('depositButton');
 
+
+// time
+const date = document.getElementById('date');
+
+function time(){
+    let timeInterval = new Date().toLocaleString();
+    date.innerHTML = timeInterval;
+}
+setInterval(time, 1000)
 // withdraw
 const withdraw = document.getElementById('withdraw');
 const withdrawInput = document.getElementById('withdrawInput');

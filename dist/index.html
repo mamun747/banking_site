@@ -1,131 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" crossorigin href="/assets/index-CQ3cI1OI.css">
-</head>
-<body class="bg-sky-100 font-mono">
+    <link rel="stylesheet" crossorigin href="/assets/index-CQ3cI1OI.css" />
+  </head>
+  <body class="bg-sky-100 font-mono">
     <header class="flex justify-between p-6 items-center">
-        <h2 class="text-3xl">Your Dashboard</h2>
-            <i class="fa-solid fa-user text-xl bg-slate-400 w-8 rounded-lg cursor-pointer text-center "></i>
+      <h2 class="text-3xl">Your Dashboard</h2>
+      <i
+        class="fa-solid fa-user text-xl bg-slate-400 w-8 rounded-lg cursor-pointer text-center"
+      ></i>
     </header>
 
-    <div class="flex flex-col items-center md:flex-row md:gap-5 gap-2 justify-center md:mt-20 mt-2 flex-wrap">
-        <!-- ! deposit -->
-        <div class="bg-white px-8 py-5 md:w-[480px] w-full  flex items-center justify-between rounded-xl flex-wrap">
-            <div>
-        <h3 class="text-2xl">Total Deposit</h3>
-        <div class="mt-3 text-3xl"><i class="fa-solid fa-dollar"></i> <span id="deposit" class="text-wrap">00</span>.00</div>
-    </div>
-    <img src="/assets/deposit-D9BSy2T-.png" alt="" class="w-[150px]">
-    </div>
-    <!-- ! withdraw -->
-        <div class="bg-white px-8 py-5 md:w-[480px] w-full flex items-center justify-between rounded-xl flex-wrap">
-            <div>
-        <h3 class="text-2xl">Total Withdraw</h3>
-        <div class="mt-3 text-3xl"><i class="fa-solid fa-dollar"></i> <span id="withdraw">00</span>.00</div>
-    </div>
-    <img src="/assets/withdraw-CaF4q9aa.png" alt="" class="w-[150px]">
-    </div>
-    <!-- ! balance -->
-        <div class="bg-white px-8 py-5 md:w-[480px] w-full flex items-center justify-between rounded-xl flex-wrap">
-            <div>
-        <h3 class="text-2xl">Total Blance</h3>
-        <div class="mt-3 text-3xl"><i class="fa-solid fa-dollar"></i> <span id="totalAmount">00</span>.00</div>
-    </div>
-    <img src="/assets/balance-YGfkDPCR.png" alt="" class="w-[150px]">
-    </div>
+    <div class="flex justify-center"></div>
+        <h1 id="date" class="text-center text-3xl rounded-lg p-6 bg-blue-200 shadow-2xl"></h1>
     </div>
 
-    <div class="flex justify-center items-center gap-5 md:mt-20 mt-3 flex-col md:flex-row md:pb-0 pb-20">
-        <!-- ! deposit -->
-        <div class="bg-slate-300 p-5 rounded-lg w-[300px]">
-            <h2 class="text-3xl">Deposit</h2>
-            <input type="number" placeholder="Deposit Ammount" class="p-1 rounded-lg w-full mt-5 outline-none border-none" id="depositInput">
-            <button class="w-full bg-blue-400 rounded-lg mt-3 p-1 md:hover:bg-blue-500" id="depositButton">Deposit</button>
+    <div
+      class="flex flex-col items-center md:flex-row md:gap-5 gap-2 justify-center md:mt-20 mt-2 flex-wrap"
+    >
+      <!-- ! deposit -->
+      <div
+        class="bg-white px-8 py-5 md:w-[480px] w-full flex items-center justify-between rounded-xl flex-wrap"
+      >
+        <div>
+          <h3 class="text-2xl">Total Deposit</h3>
+          <div class="mt-3 text-3xl">
+            <i class="fa-solid fa-dollar"></i>
+            <span id="deposit" class="text-wrap">00</span>.00
+          </div>
         </div>
-        <!--! withdraw -->
-        <div class="bg-slate-300 p-5 rounded-lg w-[300px]">
-            <h2 class="text-3xl">Withdraw</h2>
-            <input type="number" placeholder="Withdraw Ammount" class="p-1 rounded-lg w-full mt-5 outline-none border-none" id="withdrawInput">
-            <button class="w-full bg-blue-400 rounded-lg mt-3 p-1 md:hover:bg-blue-500" id="withdrawButton">Withdraw</button>
+        <img src="/assets/deposit-D9BSy2T-.png" alt="" class="w-[150px]" />
+      </div>
+      <!-- ! withdraw -->
+      <div
+        class="bg-white px-8 py-5 md:w-[480px] w-full flex items-center justify-between rounded-xl flex-wrap"
+      >
+        <div>
+          <h3 class="text-2xl">Total Withdraw</h3>
+          <div class="mt-3 text-3xl">
+            <i class="fa-solid fa-dollar"></i> <span id="withdraw">00</span>.00
+          </div>
         </div>
+        <img src="/assets/withdraw-CaF4q9aa.png" alt="" class="w-[150px]" />
+      </div>
+      <!-- ! balance -->
+      <div
+        class="bg-white px-8 py-5 md:w-[480px] w-full flex items-center justify-between rounded-xl flex-wrap"
+      >
+        <div>
+          <h3 class="text-2xl">Total Blance</h3>
+          <div class="mt-3 text-3xl">
+            <i class="fa-solid fa-dollar"></i>
+            <span id="totalAmount">00</span>.00
+          </div>
+        </div>
+        <img src="/assets/balance-YGfkDPCR.png" alt="" class="w-[150px]" />
+      </div>
+    </div>
+
+    <div
+      class="flex justify-center items-center gap-5 md:mt-20 mt-3 flex-col md:flex-row md:pb-0 pb-20"
+    >
+      <!-- ! deposit -->
+      <div class="bg-slate-300 p-5 rounded-lg w-[300px]">
+        <h2 class="text-3xl">Deposit</h2>
+        <input
+          type="number"
+          placeholder="Deposit Ammount"
+          class="p-1 rounded-lg w-full mt-5 outline-none border-none"
+          id="depositInput"
+        />
+        <button
+          class="w-full bg-blue-400 rounded-lg mt-3 p-1 md:hover:bg-blue-500"
+          id="depositButton"
+        >
+          Deposit
+        </button>
+      </div>
+      <!--! withdraw -->
+      <div class="bg-slate-300 p-5 rounded-lg w-[300px]">
+        <h2 class="text-3xl">Withdraw</h2>
+        <input
+          type="number"
+          placeholder="Withdraw Ammount"
+          class="p-1 rounded-lg w-full mt-5 outline-none border-none"
+          id="withdrawInput"
+        />
+        <button
+          class="w-full bg-blue-400 rounded-lg mt-3 p-1 md:hover:bg-blue-500"
+          id="withdrawButton"
+        >
+          Withdraw
+        </button>
+      </div>
     </div>
 
     <div class="mt-5 container mx-auto my-5">
-        <h2 class="text-3xl text-center pb-5 font-semibold text-gray-600">transaction of your payments</h2>
-        <table id="history" class="min-w-full bg-white border border-gray-200">
-            <thead>
-                <tr class="bg-gray-200 text-gray-600 uppercase text-sm">
-                    <th class="py-3 px-6">Date</th>
-                    <th class="py-3 px-6">Type</th>
-                    <th class="py-3 px-6">Amount</th>
-                    <th class="py-3 px-6">Balance</th>
-                </tr>
-            </thead>
-            <tbody class="text-gray-600 text-sm font-light text-center">
-                <!-- here append data from js -->
-            </tbody>
-        </table>
+      <h2 class="text-3xl text-center pb-5 font-semibold text-gray-600">
+        transaction of your payments
+      </h2>
+      <table id="history" class="min-w-full bg-white border border-gray-200">
+        <thead>
+          <tr class="bg-gray-200 text-gray-600 uppercase text-sm">
+            <th class="py-3 px-6">Date</th>
+            <th class="py-3 px-6">Type</th>
+            <th class="py-3 px-6">Amount</th>
+            <th class="py-3 px-6">Balance</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-600 text-sm font-light text-center">
+          <!-- here append data from js -->
+        </tbody>
+      </table>
     </div>
     <script>
-        const deposit = document.getElementById('deposit');
-const depositInput = document.getElementById('depositInput');
-const depositButton = document.getElementById('depositButton');
+      const deposit = document.getElementById("deposit");
+      const depositInput = document.getElementById("depositInput");
+      const depositButton = document.getElementById("depositButton");
 
-// withdraw
-const withdraw = document.getElementById('withdraw');
-const withdrawInput = document.getElementById('withdrawInput');
-const withdrawButton = document.getElementById('withdrawButton');
+      //   time
+      const date = document.getElementById("date");
 
-// total
-const totalAmount = document.getElementById('totalAmount');
+      function time() {
+        let timeInterval = new Date().toLocaleString();
+        date.innerHTML = timeInterval;
+      }
+      setInterval(time, 1000);
+      // withdraw
+      const withdraw = document.getElementById("withdraw");
+      const withdrawInput = document.getElementById("withdrawInput");
+      const withdrawButton = document.getElementById("withdrawButton");
 
-// transaction
-const transaction = document.getElementById('history').getElementsByTagName('tbody')[0];
+      // total
+      const totalAmount = document.getElementById("totalAmount");
 
-// Initialize total balance
-let currentBalance = 0;
+      // transaction
+      const transaction = document
+        .getElementById("history")
+        .getElementsByTagName("tbody")[0];
 
-depositButton.addEventListener('click', () => {
-    let value = depositInput.value;
-    let mainValue = Number(value);
+      // Initialize total balance
+      let currentBalance = 0;
 
-    if (!isNaN(mainValue) && mainValue < 99999999999999999999 && mainValue > 0) {
-        let currentDeposit = Number(deposit.innerText); // Get current deposit value
-        currentDeposit += mainValue; // Add new value to current deposit
-        deposit.innerText = currentDeposit; // Update displayed deposit
-        currentBalance += mainValue; // Update the total balance
-        totalAmount.innerText = currentBalance;
+      depositButton.addEventListener("click", () => {
+        let value = depositInput.value;
+        let mainValue = Number(value);
 
-        // Add transaction to the history table
-        let date = new Date();
-        let formatted = date.toLocaleString();
-        let newRow = transaction.insertRow();
-        newRow.insertCell(0).textContent = formatted;
-        newRow.insertCell(1).textContent = "Deposit";
-        newRow.insertCell(2).textContent = mainValue;
-        newRow.insertCell(3).textContent = currentBalance;
-    } else {
-        alert("That is not a valid amount.");
-    }
+        if (
+          !isNaN(mainValue) &&
+          mainValue < 99999999999999999999 &&
+          mainValue > 0
+        ) {
+          let currentDeposit = Number(deposit.innerText); // Get current deposit value
+          currentDeposit += mainValue; // Add new value to current deposit
+          deposit.innerText = currentDeposit; // Update displayed deposit
+          currentBalance += mainValue; // Update the total balance
+          totalAmount.innerText = currentBalance;
 
-    if (value === "") {
-        alert('Please enter your amount and try again.');
-    }
-    depositInput.value = ""; // Clear input field
-});
+          // Add transaction to the history table
+          let date = new Date();
+          let formatted = date.toLocaleString();
+          let newRow = transaction.insertRow();
+          newRow.insertCell(0).textContent = formatted;
+          newRow.insertCell(1).textContent = "Deposit";
+          newRow.insertCell(2).textContent = mainValue;
+          newRow.insertCell(3).textContent = currentBalance;
+        } else {
+          alert("That is not a valid amount.");
+        }
 
-withdrawButton.addEventListener('click', () => {
-    let amount = withdrawInput.value;
-    let mainAmount = Number(amount);
+        if (value === "") {
+          alert("Please enter your amount and try again.");
+        }
+        depositInput.value = ""; // Clear input field
+      });
 
-    if (!isNaN(mainAmount) && mainAmount > 0) {
-        if (mainAmount <= currentBalance) { // Check against current balance
+      withdrawButton.addEventListener("click", () => {
+        let amount = withdrawInput.value;
+        let mainAmount = Number(amount);
+
+        if (!isNaN(mainAmount) && mainAmount > 0) {
+          if (mainAmount <= currentBalance) {
+            // Check against current balance
             currentBalance -= mainAmount; // Update the total balance
             withdraw.innerText = mainAmount; // Update the withdrawal display
             totalAmount.innerText = currentBalance;
@@ -138,15 +205,14 @@ withdrawButton.addEventListener('click', () => {
             newRow.insertCell(1).textContent = "Withdrawal";
             newRow.insertCell(2).textContent = mainAmount;
             newRow.insertCell(3).textContent = currentBalance;
+          } else {
+            alert("Insufficient balance!");
+          }
+          withdrawInput.value = "";
         } else {
-            alert('Insufficient balance!');
+          alert("Please enter a valid amount and try again.");
         }
-        withdrawInput.value = "";
-    } else {
-        alert('Please enter a valid amount and try again.');
-    }
-});
-
+      });
     </script>
-</body>
+  </body>
 </html>
